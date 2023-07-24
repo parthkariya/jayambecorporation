@@ -1,0 +1,117 @@
+.hero-sec {
+    width: 100%;
+    height: 100%;
+    /* margin-top: 60px; */
+}
+
+.hero-con {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-part-first {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero-part-first {
+    max-width: 500px;
+}
+
+.hero-part-second {
+    max-width: 500px;
+}
+
+.hero-imgbox {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-heading-first-line {
+    font-size: 32px;
+    color: red;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.hero-heading-second-line {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: #333;
+    margin: 0px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: red;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-dark {
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-light:hover {
+    transition: ease-in 1s;
+    background-color: red;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    transition: ease-in 1s;
+    background-color: #fff;
+    color: red;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1140px) {
+    .hero-con {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .hero-con {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-con {
+        margin-top: 20px;
+    }
+}
