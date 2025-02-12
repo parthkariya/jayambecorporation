@@ -7,8 +7,11 @@
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 40px;
+    justify-content: center;
+
 }
 
 .product-head {
@@ -23,7 +26,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    max-width: 275px;
+    min-width: 275px;
+    max-height: 425px;
+    min-height: 425px;
 }
 
 .product-imgbox {
@@ -40,6 +47,12 @@
     font-size: 22px;
     color: #333;
     font-weight: 600;
+    margin: 0px;
+}
+.product-sub-name {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
     margin: 0px;
 }
 

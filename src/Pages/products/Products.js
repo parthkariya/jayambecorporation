@@ -3,6 +3,9 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { PageHero } from "../../components";
 import "./Products.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import Images from "../../Constants/Images";
 
 const Products = () => {
   useEffect(() => {
@@ -16,14 +19,85 @@ const Products = () => {
         <div className="product-con">
           <div className="product-box">
             <div className="product-imgbox">
+              <Carousel autoPlay={true}       // Enable autoplay
+                interval={3000}       // Set autoplay interval to 1 second (1000 ms)
+                infiniteLoop={true}   // Loop carousel infinitely
+                showThumbs={false}    // Optional: Hide thumbnail navigation
+                showStatus={false}    // Optional: Hide the status (e.g., 1/3)
+                showArrows={true}     // Optional: Show left/right arrows
+                stopOnHover={false}
+                showIndicators={false} // Hide the dots (indicators)
+
+              >
+                <img
+                  src={Images.virgin_kraft_1}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.virgin_kraft_2}
+                  alt=""
+                  className="product-img"
+                />
+
+              </Carousel>
+            </div>
+            <p className="product-name">Virgin Kraft</p>
+            <p className="product-sub-name">Kraft Liner Board KLB</p>
+            {/* <p className="product-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> */}
+            {/* <p className="product-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur,
+            </p> */}
+            <Link to="/contactus" className="btn-dark">
+              Inquiry Now
+            </Link>
+          </div>
+
+          <div className="product-box">
+            <div className="product-imgbox">
+              {/* <Carousel autoPlay={true}       // Enable autoplay
+        interval={3000}       // Set autoplay interval to 1 second (1000 ms)
+        infiniteLoop={true}   // Loop carousel infinitely
+        showThumbs={false}    // Optional: Hide thumbnail navigation
+        showStatus={false}    // Optional: Hide the status (e.g., 1/3)
+        showArrows={true}     // Optional: Show left/right arrows
+        stopOnHover={false}
+        showIndicators={false} // Hide the dots (indicators)
+
+      > */}
               <img
-                src="https://cdn.shopify.com/s/files/1/0410/7767/0041/products/61BHBrR53yL._AC_SL1500_1200x1200.jpg?v=1622460850"
+                src={Images.paper_bag}
                 alt=""
                 className="product-img"
               />
+
+
+              {/* </Carousel> */}
+
             </div>
-            <p className="product-name">Kraft Paper</p>
-            <p className="product-desc">
+            <p className="product-name">Paper For Paper Bag</p>
+            <p className="product-sub-name">35bf 80gsm</p>
+            {/* <p className="product-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -31,8 +105,8 @@ const Products = () => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p className="product-desc">
+            </p> */}
+            {/* <p className="product-desc">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -46,7 +120,7 @@ const Products = () => {
               laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
               vel eum iure reprehenderit qui in ea voluptate velit esse quam
               nihil molestiae consequatur,
-            </p>
+            </p> */}
             <Link to="/contactus" className="btn-dark">
               Inquiry Now
             </Link>
@@ -54,14 +128,54 @@ const Products = () => {
 
           <div className="product-box">
             <div className="product-imgbox">
-              <img
-                src="https://sc04.alicdn.com/kf/Hfa595aeb160f430a81aaed4d0a4b9248x.jpg"
-                alt="Product Image"
-                className="product-img"
-              />
+              <Carousel autoPlay={true}       // Enable autoplay
+                interval={3000}       // Set autoplay interval to 1 second (1000 ms)
+                infiniteLoop={true}   // Loop carousel infinitely
+                showThumbs={false}    // Optional: Hide thumbnail navigation
+                showStatus={false}    // Optional: Hide the status (e.g., 1/3)
+                showArrows={true}     // Optional: Show left/right arrows
+                stopOnHover={false}
+                showIndicators={false} // Hide the dots (indicators)
+
+              >
+                <img
+                  src={Images.duplex_board1}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.duplex_board2}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.duplex_board3}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.duplex_board4}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.duplex_board5}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.duplex_board6}
+                  alt=""
+                  className="product-img"
+                />
+
+
+              </Carousel>
             </div>
             <p className="product-name">Duplex Board</p>
-            <p className="product-desc">
+            <p className="product-sub-name">LWC, HWC & White Back Duplex</p>
+
+            {/* <p className="product-desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -84,7 +198,7 @@ const Products = () => {
               laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
               vel eum iure reprehenderit qui in ea voluptate velit esse quam
               nihil molestiae consequatur,
-            </p>
+            </p> */}
             <Link to="/contactus" className="btn-dark">
               Inquiry Now
             </Link>
@@ -93,22 +207,16 @@ const Products = () => {
           <div className="product-box">
             <div className="product-imgbox">
               <img
-                src="https://5.imimg.com/data5/SELLER/Default/2021/8/UO/NO/HP/515709/imported-virgin-kraft-liner-paper-500x500.jpeg"
+                src={Images.virgin_kraft_liner1}
                 alt="Product Image"
                 className="product-img"
               />
             </div>
-            <p className="product-name">Impored Vergin Kraft Paper</p>
-            <p className="product-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p className="product-name">Virgin Kraft Liner</p>
+            <p className="product-sub-name">
+              *Virgin Kraft Liner* new shade new item is developed in 35bf 180gsm Indian Recycled Paper.
             </p>
-            <p className="product-desc">
+            {/* <p className="product-desc">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -122,7 +230,117 @@ const Products = () => {
               laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
               vel eum iure reprehenderit qui in ea voluptate velit esse quam
               nihil molestiae consequatur,
-            </p>
+            </p> */}
+            <Link to="/contactus" className="btn-dark">
+              Inquiry Now
+            </Link>
+          </div>
+
+          <div className="product-box">
+            <div className="product-imgbox">
+              <Carousel autoPlay={true}       // Enable autoplay
+                interval={3000}       // Set autoplay interval to 1 second (1000 ms)
+                infiniteLoop={true}   // Loop carousel infinitely
+                showThumbs={false}    // Optional: Hide thumbnail navigation
+                showStatus={false}    // Optional: Hide the status (e.g., 1/3)
+                showArrows={true}     // Optional: Show left/right arrows
+                stopOnHover={false}
+                showIndicators={false} // Hide the dots (indicators)
+
+              >
+                <img
+                  src={Images.virgin_white_liner_top1}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.virgin_white_liner_top2}
+                  alt=""
+                  className="product-img"
+                />
+
+
+              </Carousel>
+            </div>
+            <p className="product-name">Virgin White Top Liner</p>
+            <p className="product-sub-name">White Kraft Liner</p>
+
+            {/* <p className="product-desc">
+            *Virgin Kraft Liner* new shade new item is developed in 35bf 180gsm Indian Recycled Paper.
+            </p> */}
+            {/* <p className="product-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur,
+            </p> */}
+            <Link to="/contactus" className="btn-dark">
+              Inquiry Now
+            </Link>
+          </div>
+
+          <div className="product-box">
+            <div className="product-imgbox">
+              <Carousel autoPlay={true}       // Enable autoplay
+                interval={3000}       // Set autoplay interval to 1 second (1000 ms)
+                infiniteLoop={true}   // Loop carousel infinitely
+                showThumbs={false}    // Optional: Hide thumbnail navigation
+                showStatus={false}    // Optional: Hide the status (e.g., 1/3)
+                showArrows={true}     // Optional: Show left/right arrows
+                stopOnHover={false}
+                showIndicators={false} // Hide the dots (indicators)
+
+              >
+                <img
+                  src={Images.indian_recycle_kraft_paper1}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.indian_recycle_kraft_paper2}
+                  alt=""
+                  className="product-img"
+                />
+                <img
+                  src={Images.indian_recycle_kraft_paper3}
+                  alt=""
+                  className="product-img"
+                />
+
+
+              </Carousel>
+            </div>
+            <p className="product-name">Indian Recycled Kraft Paper</p>
+            <p className="product-sub-name">Indian Recycled Kraft Paper
+              HSN Code 4804</p>
+
+            {/* <p className="product-desc">
+            *Virgin Kraft Liner* new shade new item is developed in 35bf 180gsm Indian Recycled Paper.
+            </p> */}
+            {/* <p className="product-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur,
+            </p> */}
             <Link to="/contactus" className="btn-dark">
               Inquiry Now
             </Link>
@@ -131,22 +349,18 @@ const Products = () => {
           <div className="product-box">
             <div className="product-imgbox">
               <img
-                src="https://5.imimg.com/data5/VG/SZ/AC/SELLER-2649768/coated-white-top-kraft-liner-500x500.png"
+                src={Images.koren_shade1}
                 alt="Product Image"
                 className="product-img"
               />
             </div>
-            <p className="product-name">White Top Liner</p>
-            <p className="product-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p className="product-desc">
+            <p className="product-name">Koren Shade</p>
+            <p className="product-sub-name">22bf, 28bf & 35bf will be available</p>
+
+            {/* <p className="product-desc">
+            *Virgin Kraft Liner* new shade new item is developed in 35bf 180gsm Indian Recycled Paper.
+            </p> */}
+            {/* <p className="product-desc">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -160,7 +374,70 @@ const Products = () => {
               laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
               vel eum iure reprehenderit qui in ea voluptate velit esse quam
               nihil molestiae consequatur,
-            </p>
+            </p> */}
+            <Link to="/contactus" className="btn-dark">
+              Inquiry Now
+            </Link>
+          </div>
+          <div className="product-box">
+
+            <div style={{ width: "100%" }}>
+              <Carousel autoPlay={true}       // Enable autoplay
+                interval={3000}       // Set autoplay interval to 1 second (1000 ms)
+                infiniteLoop={true}   // Loop carousel infinitely
+                showThumbs={false}    // Optional: Hide thumbnail navigation
+                showStatus={false}    // Optional: Hide the status (e.g., 1/3)
+                showArrows={true}     // Optional: Show left/right arrows
+                stopOnHover={false}
+                showIndicators={false} // Hide the dots (indicators)
+
+              >
+                <div className="product-imgbox">
+                  <img
+                    src={Images.kraft_paper1}
+                    alt=""
+                    className="product-img"
+                  />
+                </div>
+                <div className="product-imgbox">
+                  <img
+                    src={Images.kraft_paper2}
+                    alt=""
+                    className="product-img"
+                  />
+                </div>
+                <div className="product-imgbox">
+                  <img
+                    src={Images.kraft_paper3}
+                    alt=""
+                    className="product-img"
+                  />
+                </div>
+
+              </Carousel>
+            </div>
+            <p className="product-name">Kraft Paper</p>
+            <p className="product-sub-name">Indian Recycled Kraft Paper
+              4804</p>
+
+            {/* <p className="product-desc">
+            *Virgin Kraft Liner* new shade new item is developed in 35bf 180gsm Indian Recycled Paper.
+            </p> */}
+            {/* <p className="product-desc">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur,
+            </p> */}
             <Link to="/contactus" className="btn-dark">
               Inquiry Now
             </Link>
